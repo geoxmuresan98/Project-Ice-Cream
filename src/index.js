@@ -7,15 +7,20 @@ window.addEventListener('DOMContentLoaded', () => {
 
 const menu = document.querySelector('.menu'),
       menuOpen = document.querySelector('.hero-wrapper__nav'),
-      menuClose = document.querySelector('.menu-close');
+      menuClose = document.querySelector('.menu-close'),
+      menuBtn = document.querySelector('.menu-btn');
 
 
     menu.addEventListener('click', () => {
         menuOpen.classList.add('hero-wrapper__nav-active');
+        menuClose.classList.add('menu-close__active');
+        menuBtn.classList.add('menu-btn__active');
     });
 
     menuClose.addEventListener('click', () => {
         menuOpen.classList.remove('hero-wrapper__nav-active');
+        menuClose.classList.remove('menu-close__active');
+        menuBtn.classList.remove('menu-btn__active');
     });
 
 

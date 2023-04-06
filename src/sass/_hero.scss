@@ -106,7 +106,6 @@
             cursor: pointer;
             background-color: #fff;
             color: $seconds-color;
-            transition: 250ms all;
             &-active {
                 background-color: $seconds-color;
                 color: #fff
@@ -237,13 +236,21 @@
         right: 25px;
         top: 20px;
         cursor: pointer;
+        display: none;
+        &__active {
+            display: block;
+        }
     }
     &-btn {
         position: absolute;
         left: 18%;
         top: 19%;
+        display: none;
         &:before, &:after {
             top: 20px;
+        }
+        &__active {
+            display: block;
         }
     }
 }
@@ -398,6 +405,12 @@
     .menu {
         left: 88%;
         top: 5%;
+        &-btn {
+            &__active {
+                display: block;
+                top: 19%;
+            }
+        }
     }
 }
 
