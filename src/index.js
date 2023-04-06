@@ -2,6 +2,25 @@
 
 window.addEventListener('DOMContentLoaded', () => {
 
+
+// Menu 
+
+const menu = document.querySelector('.menu'),
+      menuOpen = document.querySelector('.hero-wrapper__nav'),
+      menuClose = document.querySelector('.menu-close');
+
+
+    menu.addEventListener('click', () => {
+        menuOpen.classList.add('hero-wrapper__nav-active');
+    });
+
+    menuClose.addEventListener('click', () => {
+        menuOpen.classList.remove('hero-wrapper__nav-active');
+    });
+
+
+// Slides 
+
     const slides = document.querySelectorAll('.customer-wrapper__header'),
           prev = document.querySelector('.prev'),
           next = document.querySelector('.next');
@@ -37,11 +56,5 @@ window.addEventListener('DOMContentLoaded', () => {
     next.addEventListener('click', () => {
         plusSlides(1);
     });
-
-    
-
-
-
-
 
 });
