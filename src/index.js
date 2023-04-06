@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "use strict";
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -64,5 +63,3 @@ const menu = document.querySelector('.menu'),
     });
 
 });
-=======
->>>>>>> origin
