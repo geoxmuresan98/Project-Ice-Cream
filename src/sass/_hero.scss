@@ -335,11 +335,11 @@
     &-btn {
       display: none;
     }
+  }
 
-}
-
-@media (min-width: 769px) {
-  .menu {
-    visibility: hidden;
+  @media (min-width: 769px) {
+    .menu {
+      visibility: hidden;
+    }
   }
 }
