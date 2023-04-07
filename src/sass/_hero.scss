@@ -335,26 +335,7 @@
     &-btn {
       display: none;
     }
-    &-content {
-      &__descr {
-        transform: translateY(122px);
-      }
-      &__center {
-        transform: translate(-40%, -1%);
-      }
-      &__footer {
-        display: none;
-      }
-      &__right {
-        display: none;
-      }
-    }
-  }
 
-  .menu {
-    left: 88%;
-    top: 5%;
-  }
 }
 
 @media (min-width: 769px) {
