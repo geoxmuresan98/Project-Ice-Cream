@@ -1,111 +1,115 @@
 @import './base';
 
 .gallery-section {
-  background-color: #e5e5e5;
+    background-color: #FFF5F6;
 
-  .container {
-    position: relative;
-    margin: 0 auto;
-  }
-
-  .container__images {
-    border-radius: 10%;
-    position: absolute;
-    display: grid;
-    align-items: center;
-    gap: 1%;
-    grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr;
-    grid-template-areas: 'first second third fourth fifth sixth';
-
-    .container__first {
-      grid-area: first;
+    .container {
+        width: 1200px;
+        margin: 0 auto;
     }
 
-    .container__second {
-      grid-area: second;
+    .container__images {
+        border-radius: 10%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        gap: 1%;
+        grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr;
+        grid-template-areas: 'first second third fourth fifth sixth';
 
-      .container__image2 {
-        margin-bottom: 6%;
-      }
+        .container__first {
+            grid-area: first;
+        }
+
+        .container__second {
+            grid-area: second;
+
+            .container__image2 {
+                margin-bottom: 6%;
+            }
+        }
+
+        .container__third {
+            grid-area: third;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            &--up {
+                grid-column: 1/3;
+            }
+
+            &--down {
+                grid-column: 1/2;
+            }
+
+            .container__image4 {
+                margin-bottom: 2.5%;
+                border-radius: 6%;
+            }
+        }
+
+        .container__fourth {
+            grid-area: fourth;
+            padding-top: 15%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .container__image6 {
+                margin-bottom: 6%;
+            }
+        }
+
+        .container__fifth {
+            grid-area: fifth;
+
+            .container__image8 {
+                margin-bottom: 6%;
+                border-radius: 16%;
+            }
+
+            padding-bottom: 30%;
+        }
+
+        .container__sixth {
+            grid-area: sixth;
+        }
     }
-
-    .container__third {
-      grid-area: third;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-
-      &--up {
-        grid-column: 1/3;
-      }
-
-      &--down {
-        grid-column: 1/2;
-      }
-
-      .container__image4 {
-        margin-bottom: 2.5%;
-        border-radius: 6%;
-      }
-    }
-
-    .container__fourth {
-      grid-area: fourth;
-      padding-top: 15%;
-      display: flex;
-      flex-direction: column;
-
-      .container__image6 {
-        margin-bottom: 6%;
-      }
-    }
-
-    .container__fifth {
-      grid-area: fifth;
-
-      .container__image8 {
-        margin-bottom: 6%;
-        border-radius: 16%;
-      }
-
-      padding-bottom: 30%;
-    }
-
-    .container__sixth {
-      grid-area: sixth;
-    }
-  }
 }
 
 @media (min-width: 1200px) {
-  .container__images {
-    top: -66px;
-    padding-right: 94px;
-    padding-left: 93px;
-  }
-
-  .container__image1,
-  .container__image2,
-  .container__image3,
-  .container__image4,
-  .container__image6,
-  .container__image7,
-  .container__image8,
-  .container__image9 {
-    &:hover {
-      border-radius: 22px;
-      transform: scale(1.5) translate(-30px, -30px);
-      overflow: hidden;
-      transition: transform 0.25s ease-in-out;
+    .gallery-section {
+        min-height: 500px;
+        background-image: linear-gradient(to bottom,
+                rgba(255, 245, 246, 1) 15%,
+                #fff 15% );
     }
-  }
 
-  .container__image10,
-  .container__image5 {
-    &:hover {
-      border-radius: 22px;
-      transform: scale(1.5) translate(0px);
-      overflow: hidden;
-      transition: transform 0.25s;
+    .container__image1,
+    .container__image2,
+    .container__image3,
+    .container__image4,
+    .container__image6,
+    .container__image7,
+    .container__image8,
+    .container__image9 {
+        &:hover {
+            border-radius: 22px;
+            transform: scale(1.3) translate(-30px, -30px);
+            overflow: hidden;
+            transition: transform 0.25s ease-in-out;
+            transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+        }
     }
-  }
+
+    .container__image10,
+    .container__image5 {
+        &:hover {
+            border-radius: 22px;
+            transform: scale(1.3) translate(0px);
+            overflow: hidden;
+            transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+            transition: transform 0.25s ease-in-out;
+        }
+    }
 }
