@@ -103,7 +103,7 @@
   color: #d41443;
 }
 .container-about {
-  background-image: url(../images/about-bg-M@X1.png);
+  background-image: url(./images/about-bg-M@X1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -111,19 +111,19 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .container-about {
-    background-image: url(../images/about-bg-M@X2.png);
+    background-image: url(./images/about-bg-M@X2.png);
   }
 }
 @media screen and (min-width: 1200px) {
   .container-about {
-    background-image: url(../images/about-bg-D@X1.png);
+    background-image: url(./images/about-bg-D@X1.png);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 1200px) and (min-resolution: 192dpi),
   screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .container-about {
-    background-image: url(../images/about-bg-D@X2.png);
+    background-image: url(./images/about-bg-D@X2.png);
   }
 }
 .description_first {
