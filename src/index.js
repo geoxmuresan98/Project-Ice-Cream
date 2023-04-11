@@ -37,11 +37,4 @@ window.addEventListener('DOMContentLoaded', () => {
     next.addEventListener('click', () => {
         plusSlides(1);
     });
-
-    
-
-
-
-
-
 });
